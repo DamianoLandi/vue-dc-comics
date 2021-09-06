@@ -79,6 +79,7 @@ export default {
         font-size: 20px;
         margin-top: 15px;
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
 
     a{
