@@ -1,5 +1,7 @@
 <template>
-    <h2>test</h2>
+    <div>
+        <h2>Content Goes Here!</h2>
+    </div>
 </template>
 
 <script>
@@ -8,6 +10,16 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    div{
+        background-color: #1C1C1C;
+        height: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    h2{
+        color: white;
+        margin-left: 250px;
+    }
 </style>

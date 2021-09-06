@@ -28,12 +28,12 @@ export default {
         justify-content: space-around;
         align-items: center;
         height: 125px;
-        border-top: 25px solid black;
-        padding-top: 25px;
+        border-top: 25px solid #1C1C1C;
+        padding-top: 5px;
     }
 
     img{
-        height: 100%;
+        height: 80%;
     }
 
     ul{
@@ -43,11 +43,10 @@ export default {
     }
 
     li a{
-        color: black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+        color: black;   
         font-size: 15px;
         text-transform: uppercase;
-        padding-bottom: 30px;
+        padding-bottom: 34px;
     }
 
     a:hover{
