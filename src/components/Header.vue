@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     header{
         display: flex;
         justify-content: space-around;
@@ -30,28 +30,24 @@ export default {
         height: 125px;
         border-top: 25px solid #1C1C1C;
         padding-top: 5px;
-    }
-
-    img{
-        height: 80%;
-    }
-
-    ul{
-        flex-basis: 40%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    li a{
-        color: black;   
-        font-size: 15px;
-        text-transform: uppercase;
-        padding-bottom: 33px;
-    }
-
-    a:hover{
-        color: dodgerblue;
-        border-bottom: 5px solid dodgerblue;
+        img{
+            height: 80%;
+        }
+        ul{
+            flex-basis: 40%;
+            display: flex;
+            justify-content: space-around;
+            a{
+                color: black;   
+                font-size: 15px;
+                text-transform: uppercase;
+                padding-bottom: 33px;
+                &:hover{
+                    color: dodgerblue;
+                    border-bottom: 5px solid dodgerblue;
+                }
+            }
+        }
     }
 
 </style>

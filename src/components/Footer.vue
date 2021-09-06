@@ -18,40 +18,38 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     footer{
         background-color: #303030;
         height: 120px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        button{
+            color: white;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 2px solid dodgerblue;
+            border-radius: 0%;
+            font-size: 17px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .social-media{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+            span{
+                font-size: 17px;
+                color: dodgerblue;
+                text-transform: uppercase;
+            }
+            img{
+                height: 40px;
+            }
+        }
     }
 
-    button{
-        color: white;
-        text-transform: uppercase;
-        background-color: transparent;
-        border: 2px solid dodgerblue;
-        border-radius: 0%;
-        font-size: 17px;
-        padding: 15px;
-        cursor: pointer;
-    }
 
-    .social-media{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 20%;
-    }
-
-    .social-media span{
-        font-size: 17px;
-        color: dodgerblue;
-        text-transform: uppercase;
-    }
-
-    .social-media img{
-        height: 40px;
-    }
 </style>

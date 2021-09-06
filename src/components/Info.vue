@@ -55,7 +55,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .container{
         height: 400px;
         background-image: url(../assets/img/footer-bg.jpg);
@@ -65,28 +65,24 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
-
-    .row{
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-        text-align: left;
-    }
-
-    h3{
-        color: white;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
-
-    a{
-        color: #959595;
-    }
-
-    a:hover{
-        color: white;
+        .row{
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            h3{
+                color: white;
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            a{
+                color: #959595;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
     }
 </style>
