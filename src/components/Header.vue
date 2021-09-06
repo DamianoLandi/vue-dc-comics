@@ -46,7 +46,7 @@ export default {
         color: black;   
         font-size: 15px;
         text-transform: uppercase;
-        padding-bottom: 34px;
+        padding-bottom: 33px;
     }
 
     a:hover{
