@@ -20,7 +20,7 @@ export default {
     MainContent,
     Info,
     Footer,
-  }
+  },
 }
 </script>
 

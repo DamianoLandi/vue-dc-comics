@@ -1,12 +1,17 @@
 <template>
     <div>
-        <h2>Content Goes Here!</h2>
+        <Movies/>
     </div>
 </template>
 
 <script>
+import Movies from "./Movies.vue"
+
 export default {
     name: "MainContent",
+    components: {
+        Movies,
+    }
 }
 </script>
 
@@ -17,9 +22,5 @@ export default {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        h2{
-            color: white;
-            margin-left: 250px;
-        }
     }
 </style>
