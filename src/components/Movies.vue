@@ -1,8 +1,14 @@
 <template>
   <div>
-    <div v-for="(movie, index) in movies" :key="index" class="movie-card">
-      test
+    <div class="cards-container">
+      <div v-for="(movie, index) in movies" :key="index" class="movie-card">
+        <div class="img-container">
+          <img :src="movie.thumb" alt="movie.series">
+        </div>
+        <h2>{{movie.series}}</h2>
+      </div>
     </div>
+    <button>Load More</button>
   </div>
 </template>
 
@@ -102,6 +108,41 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  .cards-container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .movie-card{
+      flex-basis: calc(100% / 6);
+      padding: 15px;
+      .img-container{
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img{
+          width: 100%;
+        }
+      }
+      h2{
+        color: white;
+        text-transform: uppercase;
+        max-width: 100%;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+  }
+  button{
+    margin: 30px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 40px;
+    border-color: transparent;
+    text-transform: uppercase;
+  }
 </style>

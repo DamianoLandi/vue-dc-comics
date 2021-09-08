@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main-container">
         <Movies/>
     </div>
 </template>
@@ -16,11 +16,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    div{
+    .main-container{
         background-color: #1C1C1C;
-        height: 150px;
+        min-height: 150px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
     }
 </style>
