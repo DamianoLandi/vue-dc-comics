@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="jumbo">
+      <h3>Current Series</h3>
+    </div>
     <div class="cards-container">
       <div v-for="(movie, index) in movies" :key="index" class="movie-card">
         <div class="img-container">
@@ -109,6 +112,25 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .jumbo{
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin-bottom: 40px;
+    position: relative;
+    h3{
+      color: white;
+      background-color: dodgerblue;
+      width: 250px;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      position: absolute;
+      top: 380px;
+      left: 290px;
+    }
+  }
   .cards-container{
     width: 70%;
     height: 100%;
